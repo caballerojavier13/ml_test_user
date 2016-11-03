@@ -1,7 +1,7 @@
 {
-  "name": "scapegoat",
-  "version": "1.0.0",
-  "description": "A small library providing utility methods to escape and unescape HTML entities",
+  "name": "ml_test_user",
+  "version": "0.0.1",
+  "description": "Módulo para obtener usuarios de testeo de Mercadolibre e incrementar el saldo de una cuenta por site",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
@@ -19,11 +19,11 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
+      "url": "https://github.com/caballerojavier13/ml_test_user/blob/master/LICENSE"
     }
   ],
   "bugs": {
-    "url": "https://github.com/brentertz/scapegoat/issues"
+    "url": "https://github.com/caballerojavier13/ml_test_user/issues"
   },
   "devDependencies": {
     "mocha": "~1.16.2",
