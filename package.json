@@ -25,6 +25,9 @@
   "bugs": {
     "url": "https://github.com/caballerojavier13/ml_test_user/issues"
   },
+  "dependencies": {
+    "node-rest-client": ""
+  },
   "devDependencies": {
     "mocha": "~1.16.2",
     "chai": "~1.8.1"

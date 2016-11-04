@@ -1,36 +1,16 @@
 var should = require('chai').should(),
-    scapegoat = require('../index'),
-    escape = scapegoat.escape,
-    unescape = scapegoat.unescape;
+var Test_user = require('../index'),
+var get_user = Test_user.get_user,
+var add_account_money = Test_user.add_account_money;
 
-describe('#escape', function() {
-  it('converts & into &amp;', function() {
-    escape('&').should.equal('&amp;');
+describe('#get_user', function() {
+
+  it('MLB;', function() {
+    get_user('MLB').should.equal('&gt;');
   });
 
-  it('converts " into &quot;', function() {
-    escape('"').should.equal('&quot;');
-  });
-
-  it('converts \' into &#39;', function() {
-    escape('\'').should.equal('&#39;');
-  });
-
-  it('converts < into &lt;', function() {
-    escape('<').should.equal('&lt;');
-  });
-
-  it('converts > into &gt;', function() {
-    escape('>').should.equal('&gt;');
-  });
-
-  it('returns empty string if called with falsey value', function() {
-    escape().should.equal('');
-    escape('').should.equal('');
-    escape(null).should.equal('');
-  });
 });
-
+/*
 describe('#unescape', function() {
   it('converts &amp; into &', function() {
     unescape('&amp;').should.equal('&');
@@ -62,3 +42,4 @@ describe('#unescape', function() {
     unescape(null).should.equal('');
   });
 });
+*/
