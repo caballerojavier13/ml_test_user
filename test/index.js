@@ -1,12 +1,20 @@
-var should = require('chai').should(),
-var Test_user = require('../index'),
-var get_user = Test_user.get_user,
-var add_account_money = Test_user.add_account_money;
+var expect = require('chai').expect,
+Test_user = require('../index'),
+get_user = Test_user.get_user;
 
 describe('#get_user', function() {
 
   it('MLB;', function() {
-    get_user('MLB').should.equal('&gt;');
+    var user = get_user('MLB',1000);
+
+    expect(user).to.not.be.undefined;
+
+    expect(user.username).to.not.be.undefined;
+
+    expect(user.email).to.not.be.undefined;
+
+    expect(user.password).to.not.be.undefined;
+
   });
 
 });
